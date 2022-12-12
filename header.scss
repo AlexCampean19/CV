@@ -1,0 +1,540 @@
+@media (min-width: 320px) {
+    header {
+        #imgsh {
+            width: 140px;
+            height: 140px;
+        }
+        text-align: center;
+        padding: 25px 54px;
+        margin: 0;
+        background-color: $backfot;
+        .numarcumparaturi {
+            background-color: #059E67;
+            border-radius: 50%;
+            margin-left: 10px;
+            width: 20px;
+            color: white;
+        }
+        .cumparaturi {
+            display: flex;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .detfruct {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        a.rmvitm {
+            font-family: "Font Awesome 5 Free";
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            flex-direction: row-reverse;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1.5;
+            font-size: 15px;
+            font-weight: 900;
+            padding: 0;
+            text-align: center;
+            overflow-wrap: unset;
+            position: absolute;
+            z-index: 0;
+            right: 30px;
+            top: 30px;
+            text-decoration: none;
+            &:after {
+                content: "\58";
+                color: black;
+            }
+            span {
+                display: none;
+            }
+        }
+        .mobilebtn {
+            border: 0;
+            background-color: transparent;
+            font-family: "Font Awesome 5 Free";
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            font-size: 30px;
+            color: $cultitlu;
+            font-weight: 900;
+            position: absolute;
+            left: 15px;
+            top: 25px;
+            padding-left: 10px;
+            &:after {
+                content: "\f0c9";
+                color: $culbacklact;
+            }
+            .iconmob {
+                display: none;
+            }
+        }
+        .navbar {
+            background-color: $alb;
+            display: none;
+            position: absolute;
+            width: 50%;
+            padding: 0;
+            background-color: $backfot;
+            position: absolute;
+            .navbuton {
+                display: inline-block;
+            }
+        }
+        .cart {
+            font-family: "Font Awesome 5 Free";
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            flex-direction: row-reverse;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1.5;
+            font-size: 15px;
+            font-weight: 900;
+            padding: 0;
+            text-align: center;
+            overflow-wrap: unset;
+            position: absolute;
+            z-index: 3;
+            right: 30px;
+            top: 30px;
+            text-decoration: none;
+            &:after {
+                content: "\f07a";
+                color: black;
+            }
+            span {
+                display: none;
+            }
+        }
+        .showshop {
+            &+.shop {
+                display: block;
+                position: fixed;
+                z-index: 2;
+                list-style: none;
+                width: 100%;
+                left: 0;
+                overflow: auto;
+                height: 100%;
+                padding-top: 54px;
+                top: 0;
+                background: white;
+            }
+        }
+        .shopitems {
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+        }
+        .numeFruct {
+            padding-bottom: 15px;
+        }
+        #quantyy {
+            display: inline-block;
+            padding-right: 20px;
+        }
+        .valuequanty {
+            width: 50px;
+            border-radius: 45%;
+            border: 0.5px solid $culborder;
+            text-align: center;
+            display: inline-block;
+        }
+        .pricebut {
+            padding-top: 14px;
+        }
+        .price {
+            padding-top: 15px;
+            display: inline-block;
+        }
+        .delitm {
+            margin-left: 110px;
+            border: none;
+            background: $cultxtsupl;
+            font-size: 15px;
+            border-radius: 40%;
+        }
+        .checkout {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            margin: 13px;
+            display: block;
+            padding: 15px 40px;
+            background-color: $culbacklact;
+        }
+        .checkout:hover {
+            background-color: $cullachover;
+            color: white;
+        }
+        .itmcart,
+        .subtotal {
+            display: inline-block;
+            float: right;
+        }
+        .topshop {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        .butonclose {
+            display: block;
+            margin-bottom: 50px;
+        }
+        .close {
+            float: right;
+            background: white;
+            border: none;
+            font-size: 30px;
+        }
+        .shop {
+            display: none;
+        }
+        .navigation-active {
+            height: 100%;
+            overflow-x: hidden;
+            z-index: 3;
+            padding-left: 10px;
+            &+.navbar {
+                justify-content: flex-start;
+                .navbuton {
+                    display: inline-block;
+                    .arrowuplink {
+                        border: 0;
+                        background-color: transparent;
+                        font-family: "Font Awesome 5 Free";
+                        -webkit-font-smoothing: antialiased;
+                        display: inline-block;
+                        font-style: normal;
+                        font-variant: normal;
+                        text-rendering: auto;
+                        line-height: 1;
+                        font-size: 30px;
+                        color: $cultitlu;
+                        font-weight: 900;
+                        position: absolute;
+                        text-decoration: none;
+                        top: 50px;
+                        padding-left: 10px;
+                        &:after {
+                            content: "\f106";
+                            color: $culbacklact;
+                        }
+                    }
+                    .arrowup {
+                        display: none;
+                    }
+                }
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                z-index: 2;
+                list-style: none;
+                width: 100%;
+                left: 0;
+                overflow: auto;
+                height: 100%;
+                padding-top: 54px;
+                top: 0;
+                .dropbtn {
+                    text-decoration: none;
+                    @include tipografie(20px, 700, 26px, $cultitlu);
+                    margin-left: 15px;
+                }
+                .dropbtn2 {
+                    text-decoration: none;
+                    @include tipografie(20px, 700, 26px, $culpretred);
+                    margin-left: 15px;
+                }
+                .menu {
+                    display: none;
+                    list-style-type: none;
+                    a {
+                        text-transform: none;
+                        display: block;
+                        text-decoration: none;
+                    }
+                }
+                .showmenu {
+                    .arrowuplink {
+                        transform: rotate(180deg);
+                        padding-right: 10px;
+                    }
+                    &+.menu {
+                        display: inline;
+                        padding: 0;
+                        margin-top: 25px;
+                        padding: 25px;
+                        z-index: 1;
+                        background-color: $backfot;
+                        .aditionaltext {
+                            position: absolute;
+                            z-index: 1;
+                            top: 25px;
+                            @include tipografie(20px, 700, 24px, $cultitlu);
+                            padding: 25px;
+                            display: none;
+                        }
+                        .aditionaltext2 {
+                            position: absolute;
+                            z-index: 1;
+                            top: 65px;
+                            @include tipografie(16px, 600, 20px, $cultxtsupl);
+                            padding: 25px;
+                            max-width: 30%;
+                            display: none;
+                        }
+                        .aditionaltext3 {
+                            position: absolute;
+                            z-index: 1;
+                            bottom: 20px;
+                            @include tipografie(14px, 800, 28px, $cultitlu);
+                            padding: 25px;
+                            display: none;
+                        }
+                        img {
+                            height: auto;
+                            width: auto;
+                            position: relative;
+                            z-index: 0;
+                            display: none;
+                        }
+                        li {
+                            z-index: 1;
+                            a {
+                                @include tipografie(16px, 700, 20px, $cultitlu);
+                                padding-top: 9px;
+                                padding-left: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        img {
+            height: auto;
+            width: 211px;
+        }
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 25px 0px 25px 40px;
+        margin: 0;
+        background-color: $backfot;
+        text-align: left;
+        .navigation {
+            display: inline;
+        }
+        .mobilebtn {
+            display: none;
+        }
+        .dropmenumob {
+            display: none;
+            .iconmob {
+                display: none;
+            }
+        }
+        .navbar {
+            background-color: $backfot;
+            position: absolute;
+            .navbuton {
+                display: inline-block;
+            }
+            display: inline-block;
+            padding-left: 50px;
+            list-style: none;
+            width: 75%;
+            .dropbtn {
+                text-decoration: none;
+                @include tipografie(20px, 700, 26px, $cultitlu);
+                margin-left: 15px;
+            }
+            .dropbtn2 {
+                text-decoration: none;
+                @include tipografie(20px, 700, 26px, $culpretred);
+                margin-left: 15px;
+            }
+            .dropbtn:hover,
+            .dropbtn2:hover {
+                color: $culbacklact;
+            }
+            .menu {
+                display: none;
+                position: absolute;
+                list-style-type: none;
+                a {
+                    text-transform: none;
+                    display: block;
+                    text-decoration: none;
+                }
+            }
+            .showmenu {
+                &+.menu {
+                    display: grid;
+                    grid-template-columns: 0.5fr 1fr;
+                    grid-template-rows: 1fr;
+                    padding: 0;
+                    margin-top: 25px;
+                    background-color: $alb;
+                    padding: 25px;
+                    box-shadow: 0px 0px 2px 0.5px rgb(0 0 0 / 25%);
+                    z-index: 1;
+                    .aditionaltext {
+                        position: absolute;
+                        z-index: 1;
+                        top: 25px;
+                        @include tipografie(20px, 700, 24px, $cultitlu);
+                        padding: 25px;
+                    }
+                    .aditionaltext2 {
+                        position: absolute;
+                        z-index: 1;
+                        top: 65px;
+                        @include tipografie(16px, 600, 20px, $cultxtsupl);
+                        padding: 25px;
+                        max-width: 30%;
+                    }
+                    .aditionaltext3 {
+                        position: absolute;
+                        z-index: 1;
+                        bottom: 20px;
+                        @include tipografie(14px, 800, 28px, $cultitlu);
+                        padding: 25px;
+                    }
+                    img {
+                        height: auto;
+                        width: auto;
+                        position: relative;
+                        z-index: 0;
+                    }
+                    li {
+                        z-index: 1;
+                        background-color: $alb;
+                        a {
+                            @include tipografie(16px, 700, 20px, $cultitlu);
+                            padding-top: 9px;
+                            padding-left: 30px;
+                        }
+                        a:hover {
+                            color: $culbacklact;
+                        }
+                    }
+                }
+            }
+        }
+        .cart {
+            font-family: "Font Awesome 5 Free";
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            flex-direction: row-reverse;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1.5;
+            font-size: 15px;
+            font-weight: 900;
+            padding: 0;
+            text-align: center;
+            overflow-wrap: unset;
+            position: absolute;
+            z-index: 0;
+            top: 30px;
+            right: 90px;
+            text-decoration: none;
+            &:after {
+                content: "\f07a";
+                color: black;
+            }
+            span {
+                display: none;
+            }
+        }
+        .showshop {
+            &+.shop {
+                display: block;
+                position: absolute;
+                width: 40%;
+                height: 100%;
+                padding: 0;
+                top: 80px;
+                left: unset;
+                overflow: inherit;
+                z-index: 2;
+            }
+        }
+        .shop {
+            background-color: white;
+            position: absolute;
+            display: none;
+            right: 0px;
+        }
+        .shopitems {
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+        }
+        .numeFruct {
+            padding-bottom: 15px;
+        }
+        #quantyy {
+            display: inline-block;
+        }
+        .valuequanty {
+            width: 35px;
+            padding: 0;
+            border-radius: 25px;
+            margin-left: 10px;
+            border: 0.5px solid $culborder;
+            text-align: center;
+            display: inline-block;
+        }
+        .price {
+            padding-top: 15px;
+        }
+        .itmcart,
+        .subtotal {
+            display: inline-block;
+        }
+        img {
+            height: auto;
+            width: 211px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    header {
+        .navbar {
+            .shop {
+                right: -107px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1700px) {
+    header {
+        .navbar {
+            .shop {
+                right: -129px;
+            }
+        }
+    }
+}
